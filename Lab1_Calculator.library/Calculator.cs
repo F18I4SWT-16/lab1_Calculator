@@ -8,9 +8,12 @@ namespace Lab1_Calculator.Library
 {
     public class Calculator
     {
+        public double Accumulator { get; private set; }
+
         public double Add(double a, double b)
         {
-            return a + b;
+            Accumulator = a + b;
+            return Accumulator;
         }
 
         public double Subtract(double a, double b)
@@ -43,5 +46,9 @@ namespace Lab1_Calculator.Library
 
             return result;
         }
+
+        
+
+
     }
 }
