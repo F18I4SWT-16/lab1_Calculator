@@ -23,6 +23,11 @@ namespace Lab1_Calculator.Library
             return a * b;
         }
 
+        public double Divide(double a, double b)
+        {
+            return a / b;
+        }
+
         public double Power(double x, double exp)
         {
             double result = x;
