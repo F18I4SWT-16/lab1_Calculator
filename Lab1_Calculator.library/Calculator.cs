@@ -18,17 +18,20 @@ namespace Lab1_Calculator.Library
 
         public double Subtract(double a, double b)
         {
-            return a - b;
+            Accumulator = a - b;
+            return Accumulator;
         }
 
         public double Multiply(double a, double b)
         {
-            return a * b;
+            Accumulator = a * b;
+            return Accumulator;
         }
 
         public double Divide(double a, double b)
         {
-            return a / b;
+            Accumulator = a / b;
+            return Accumulator;
         }
 
         public double Power(double x, double exp)
@@ -42,9 +45,10 @@ namespace Lab1_Calculator.Library
             for (int i = 1; i < exp; i++)
             {
                 result = result * x;
+                Accumulator = result;
             }
 
-            return result;
+            return Accumulator;
         }
 
         
