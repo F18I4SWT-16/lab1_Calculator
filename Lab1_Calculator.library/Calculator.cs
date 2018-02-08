@@ -45,9 +45,9 @@ namespace Lab1_Calculator.Library
             for (int i = 1; i < exp; i++)
             {
                 result = result * x;
-                Accumulator = result;
             }
 
+            Accumulator = result;
             return Accumulator;
         }
 
