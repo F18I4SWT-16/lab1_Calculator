@@ -30,7 +30,7 @@ namespace Lab1_Calculator.Library
 
         public double Divide(double a, double b)
         {
-            Accumulator = a / b;
+            Accumulator = a / b; 
             return Accumulator;
         }
 
